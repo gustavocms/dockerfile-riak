@@ -33,8 +33,8 @@ RUN echo "ulimit -n 4096" >> /etc/default/riak
 
 # Hack for initctl
 # See: https://github.com/dotcloud/docker/issues/1024
-RUN dpkg-divert --local --rename --add /sbin/initctl
-RUN ln -s /bin/true /sbin/initctl
+# RUN dpkg-divert --local --rename --add /sbin/initctl
+# RUN ln -s /bin/true /sbin/initctl
 
 # Expose Riak Protocol Buffers and HTTP interfaces, along with SSH
 EXPOSE 8087 8098 22
