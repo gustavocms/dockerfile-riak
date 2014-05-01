@@ -3,7 +3,7 @@
 # VERSION       0.1.0
 
 # Use the Ubuntu base image provided by dotCloud
-FROM ubuntu:latest
+FROM ubuntu:precise
 
 # Update the APT cache
 RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
